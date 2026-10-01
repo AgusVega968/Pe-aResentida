@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1>La Resentida</h1>
+        <img src="imag/banner.jpg" alt="banner promocional">
+        <p>Acercate a disfrutar de la 1era edicion de nuestra peña, donde encontraras: zambas, chacareras para levantar el polvo en la pista.
+        Te esperamos con empanadas bien calientes, platos regionales al disco y bebidas bien frescas para compartir entre amigos y familia.
+        </p>
+    <nav>  
+    <ul>
+        <li><a href="#info">Informacion del evento</a></li>
+        <li><a href="#artistas">Artistas</a></li>
+        <li><a href="#musica">Escuchá a nuestros artistas</a></li>
+        <li><a href="#puntoVenta">Puntos de Venta</a></li>
+        <li><a href="#reservatumesa">Reserva tu Mesa</a></li>
+    </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Informacion del Evento</h2>
+            <p><strong> Fecha:</strong> Sabado 10 de octubre del 2026</p>
+            <p><strong> Horario:</strong> Apertura de puertas a las 15:00 hs</p>
+            <p><strong>  Lugar:</strong> Predio la Estrella (ruta 65)</p>
+            <p>Contamos con estacionamiento vigilado, patio de comidas y espacio para bailar.</p>
+        </section>
+        <section id="artistas">
+            <h2>Grilla de Artistas</h2>
+           <article>
+            <h3>Los Vidaleros</h3>
+            <img src="imag/vidaleros2.jpg" width="300" height="200" alt="Musico cantando">
+           </article>
+           <article>
+            <h3>Orellana Lucca</h3>
+            <img src="imag/orellana.jpg" width="300" height="200" alt="Musicos cantando en el escenario">
+           </article>
+           <article>
+            <h3>Los del Barrio</h3>
+            <img src="imag/losdelbarrio.jpg" width="300" height="250" alt="Musicos posando con sus instrumentos">
+           </article>
+        </section>
+        <section id="musica">
+            <h3>Escuchá a nuestros artistas</h3>
+            <p>Te dejamos una muestra de las canciones que van a sonar en vivo:</p>
+            <ul>
+                <li>
+                    <article>
+                        <h4>Vidaleros- Tanto la Queria</h4>
+            <audio controls>
+                <source src="audios/Tanto la Queria - Vidaleros (Video Oficial).mp3" type="audio/mpeg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+                </li>
+                    </article>
+                <li>
+                    <article>
+                        <h4>Orellana Lucca- Milagro del Tiempo</h4>
+            <audio controls>
+                <source src="audios/Orellana Lucca - Milagro del Tiempo (TIERRA QUE ESPERA).mp3" type="audio/mpeg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+                </li>
+                    </article>
+                <li>
+                    <article>
+                        <h4>Los del Barrio- Si supieras</h4>
+            <audio controls>
+                <source src="audios/Si supieras.mp3" type="audio/mpeg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+                    </article>
+                </li>
+            </ul>   
+        </section>
+        <section id="puntoVenta">
+            <h2>Puntos de Venta de Entradas</h2>
+            <p>Podés adquirir tus entradas anticipadas
+            en los siguientes puntos oficiales o en la boletería del predio el día del evento:</p>
+             <ul>
+                <li><strong>Sociedad Española (Sarmiento y Santa Fe)</strong></li>
+                <li><strong>Jaya Drugstore (Shipton 2214)</strong></li>
+                <li><strong>la Trastienda (Balcarce 460)</strong></li>
+             </ul>   
+
+        </section>
+        <section id="reservatumesa">
+            <h2>Reserva tu Mesa</h2>
+            <p>Asegurá la ubicación para vos y tu familia. <strong>Las reservas se guardan hasta las 21:00 hs</strong></p>
+       <form>
+        <div>
+      <label for="titular">Nombre y Apellido del titular:</label>
+      <input type="text" id="titular" placeholder="Ej. Mariana López" required>
+        </div>
+
+        <div>
+    <label for="correo">Correo Electronico de Contacto:</label>
+    <input type="email" id="correo" placeholder="ejemploo@gmail.com" required>
+        </div>
+
+        <div>
+    <label for="comensales">Cantidad de Comensales:</label>
+    <input type="number" id="comensales" min="2" max="15" value="2" required>
+        </div>
+
+        <div>
+    <label for="sector">Ubicacion de la mesa: </label>
+    <select name="sector" name="sector" required>
+        <option value="">--Selecciona un Sector--</option>
+        <option value="escenario">Frente al escenario</option>
+        <option value="galeria">Galeria techada</option>
+        <option value="patio">Patio al aire libre</option>
+    </select>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Horario de llegada estimado:</legend>
+                <input type="radio" id="turno-temprano" name="turno" value="15:00-18:00" checked>
+                <label for="turno-temprano">15:00 hs -18:00 hs</label>
+                <input type="radio" id="turno-tarde" name="turno" value="18:00-21:00">
+                <label for="turno-tarde"> 18:00 hs-21:00 hs</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="preferencias">Observaciones o requerimientos especiales:</label>
+            <textarea id="preferencias" name="preferencias" rows="4" placeholder="inidcar si necesitan silla para bebe, espacio para silla de ruedas o carrito, menu sin TACC..."></textarea>
+        </div>
+
+        <div>
+            <button>Reservar Mesa</button>
+        </div>
+
+       </form>
+    </section>
+    </main>
+
+    <footer>
+
+   <address>
+    <h3>Contactos</h3>
+    <p><strong>WhatsApp para Consultas:</strong> <a href="tel:5493865752102"> +54 9 3865 75-2102</a></p> 
+    <p><strong>Email:</strong><a href="mail:info@peñalaresentida.com">info@peñalaresentida.com</a></p>
+   </address>
+
+  </footer>
+</body>
+</html>
